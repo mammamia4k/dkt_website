@@ -1,0 +1,4 @@
+{
+  "buildCommand": "cd dil-konusma-terapisti-react && npm run build",
+  "outputDirectory": "dil-konusma-terapisti-react/dist"
+}
