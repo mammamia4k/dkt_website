@@ -28,12 +28,12 @@ export default function AboutSection() {
           <div className="about-bio-image-wrapper">
             <div className="about-bio-card glass-card">
               <div className="about-bio-img-box">
-                <img src={aboutPhoto} alt="DKT Sultan Teyfur" className="about-bio-img" />
+                <img src={aboutPhoto} alt="DKT Sultan Teyfur" className="about-bio-img" loading="lazy" decoding="async" width="400" height="400" />
               </div>
               <div className="about-bio-badge">
                 <div className="bio-badge-icon">🎓</div>
                 <div className="bio-badge-text">
-                  <h4>Biruni Üniversitesi</h4>
+                  <div className="bio-badge-heading">Biruni Üniversitesi</div>
                   <p>Dil ve Konuşma Terapisi - Onur Mezunu</p>
                 </div>
               </div>

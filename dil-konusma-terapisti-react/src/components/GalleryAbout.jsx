@@ -63,7 +63,7 @@ export default function GalleryAbout() {
                   key={index}
                   className={`slider-slide ${index === currentIndex ? 'active' : ''}`}
                 >
-                  <img src={img.src} alt={img.alt} className="gallery-img" />
+                  <img src={img.src} alt={img.alt} className="gallery-img" loading="lazy" decoding="async" width="600" height="440" />
                   <div className="slide-badge">{img.caption}</div>
                 </div>
               ))}
@@ -114,7 +114,7 @@ export default function GalleryAbout() {
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div className="feature-text">
-                  <h4>Sürekli Mesleki Gelişim</h4>
+                  <h3>Sürekli Mesleki Gelişim</h3>
                   <p>Mesleki gelişimin hiç bitmediğine inanıyor; eğitimler, seminerler ve güncel yaklaşımlarla kendimi sürekli geliştirmeye devam ediyorum.</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function GalleryAbout() {
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div className="feature-text">
-                  <h4>Aile ile İş Birliği</h4>
+                  <h3>Aile ile İş Birliği</h3>
                   <p>Aileyi terapi sürecinin önemli bir parçası olarak görüyor, seans dışında da gelişimi destekleyecek rehberlik sunuyorum.</p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function GalleryAbout() {
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div className="feature-text">
-                  <h4>Bilimsel Yaklaşım</h4>
+                  <h3>Bilimsel Yaklaşım</h3>
                   <p>Kanıta dayalı ve güncel terapi yöntemleriyle her danışana özel çözümler geliştiriyorum.</p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function GalleryAbout() {
               <div className="feature-item">
                 <div className="feature-icon">✓</div>
                 <div className="feature-text">
-                  <h4>Bireyselleştirilmiş Terapi</h4>
+                  <h3>Bireyselleştirilmiş Terapi</h3>
                   <p>Her danışanın güçlü yönlerine ve ihtiyaçlarına uygun terapi planı oluşturuyorum.</p>
                 </div>
               </div>

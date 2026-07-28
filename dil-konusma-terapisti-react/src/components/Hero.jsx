@@ -120,7 +120,7 @@ export default function Hero() {
                   key={idx} 
                   className={`hero-slide ${idx === currentSlide ? 'active' : ''}`}
                 >
-                  <img src={img.src} alt={img.alt} className="hero-img" />
+                  <img src={img.src} alt={img.alt} className="hero-img" loading={idx === 0 ? "eager" : "lazy"} decoding="async" width="480" height="540" />
                 </div>
               ))}
 
@@ -145,7 +145,7 @@ export default function Hero() {
               <div className="floating-experience-card glass-card">
                 <div className="floating-icon">🎓</div>
                 <div className="floating-text">
-                  <h4>DKT Sultan Teyfur</h4>
+                  <div className="floating-name">DKT Sultan Teyfur</div>
                   <p>Dil ve Konuşma Terapisti</p>
                 </div>
               </div>
